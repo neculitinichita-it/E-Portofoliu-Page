@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Foto - Neculiti Nichita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (același ca în index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-text">
+                            <h1>E-Portofoliu</h1>
+                            <p>Neculiti Nichita | Grupa IT2501</p>
+                        </div>
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Acasă</a></li>
+                        <li><a href="cv.html"><i class="fas fa-file-alt"></i> CV</a></li>
+                        <li><a href="galerie.html" class="active"><i class="fas fa-images"></i> Galerie Foto</a></li>
+                        <li><a href="https://feisa.usch.md/zi/"><i class="fas fa-calendar-alt"></i> Orar</a></li>
+                        <li class="dropdown">
+                            <a href="#"><i class="fas fa-tasks"></i> Sarcini Practice <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://github.com/neculitinichita-it/E-Portofoliu">SP1</a></li>
+                                <li><a href="https://github.com/neculitinichita-it/E-Portofoliu">SP2</a></li>
+                                
+                                <!-- ... restul SP-urilor -->
+                            </ul>
+                        </li>
+                        <li><a href="contacte.html"><i class="fas fa-envelope"></i> Contacte</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-images"></i> Galerie Foto</h1>
+                <p>Colecția mea de poze personale cu descrieri</p>
+            </div>
+
+            <div class="gallery-container">
+                
+                <!-- Galeria de imagini -->
+                <div class="gallery-grid">
+                    <!-- Exemplu de item galerie - înlocuiește cu pozele tale -->
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./imagini/poza-profil.jpg" alt="Activitate universitară">
+                            <div class="gallery-overlay">
+                                <button class="view-btn"><i class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Poza personala</h3>
+                            <p>Poza in cadrul fotosesiei pentru primirea diplomei de participare la concurs.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> Octombrie 2025</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./imagini/mercedes.jpg" alt="Activitate universitară">
+                            <div class="gallery-overlay">
+                                <button class="view-btn"><i class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Activitate universitară</h3>
+                            <p>Participarea la un workshop de tehnologie organizat in Mercedes W211.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> Octombrie 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./imagini/tigr.jpg" alt="Proiect de cercetare">
+                            <div class="gallery-overlay">
+                                <button class="view-btn"><i class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Proiect de cercetare</h3>
+                            <p>Lucrul la un proiect de cercetare în domeniul inteligenței artificiale, Lift Lapaevca</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> Noiembrie 2025</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./imagini/arc.jpg" alt="Proiect de cercetare">
+                            <div class="gallery-overlay">
+                                <button class="view-btn"><i class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Proiect de colaborare</h3>
+                            <p>Lucrul la un proiect in cadrul volunatiarului, tragerea din arc.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> Iulie 2025</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./imagini/prazdnic.jpg" alt="Proiect de cercetare">
+                            <div class="gallery-overlay">
+                                <button class="view-btn"><i class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Proiect de colaborare</h3>
+                            <p>Lucrul la un proiect in cadrul petrecerii unui prieten la armata</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> Noiembrie 2025</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./imagini/sister.jpg" alt="Proiect de cercetare">
+                            <div class="gallery-overlay">
+                                <button class="view-btn"><i class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Zi de neuitat!!!</h3>
+                            <p>Sincere felicitari si la multi ani! surorii dragi♥</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> August 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- Adaugă mai multe item-uri aici (minim 6) -->
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox pentru vizualizare mărită -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption"></div>
+            <button class="lightbox-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer (același ca în index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>E-Portofoliu Educațional</h3>
+                    <p>Neculiti Nichita | Grupa XYZ</p>
+                    <p>Facultatea de Informatică, USM</p>
+                </div>
+                <div class="footer-links">
+                    <a href="contacte.html"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="https://github.com/neculitinichita-it" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-Portofoliu Tehnologii de Comunicare Informațională. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

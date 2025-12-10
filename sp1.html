@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP1 - Neculiti Nichita</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Stiluri pentru paginile SP */
+        .sp-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        .sp-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .sp-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .sp-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .sp-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .sp-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .task-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .info-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sp-description {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .sp-links {
+            margin: 30px 0;
+        }
+        
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .link-item:hover {
+            border-color: #3498db;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .link-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .link-text h3 {
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+        
+        .link-text p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .pdf-preview {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .pdf-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .pdf-icon {
+            font-size: 2rem;
+            color: #e74c3c;
+        }
+        
+        .requirements {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .requirements h3 {
+            color: #ff8f00;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .sp-title {
+                font-size: 2rem;
+            }
+            
+            .link-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <div class="logo-text">
+                            <h1>E-Portofoliu</h1>
+                            <p>Neculiti Nichita | Grupa IT2501</p>
+                        </div>
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Acasă</a></li>
+                        <li><a href="../cv.html"><i class="fas fa-file-alt"></i> CV</a></li>
+                        <li><a href="../galerie.html"><i class="fas fa-images"></i> Galerie Foto</a></li>
+                        <li><a href="../orar.html"><i class="fas fa-calendar-alt"></i> Orar</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active"><i class="fas fa-tasks"></i> Sarcini Practice <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://github.com/neculitinichita-it/E-Portofoliu" class="active">SP1</a></li>
+                                <li><a href="https://github.com/neculitinichita-it/E-Portofoliu">SP2</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="../contacte.html"><i class="fas fa-envelope"></i> Contacte</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="sp-container">
+        <div class="sp-header">
+            <h1 class="sp-title"><i class="fas fa-file-pdf"></i> Sarcina Practică 1</h1>
+            <p class="sp-subtitle">Documentație și specificații pentru e-portofoliu</p>
+        </div>
+
+        <!-- Secțiunea principală -->
+        <section class="sp-section">
+            <h2><i class="fas fa-info-circle"></i> Informații generale</h2>
+            
+            <div class="task-info">
+                <div class="info-card">
+                    <h3><i class="far fa-calendar-alt"></i> Data realizării</h3>
+                    <p>24 Septembrie 2024</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-book"></i> Disciplina</h3>
+                    <p>Tehnologii de Comunicare Informațională</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Status</h3>
+                    <p>Documentație finalizată</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-file-pdf"></i> Format</h3>
+                    <p>Document PDF</p>
+                </div>
+            </div>
+
+            <div class="sp-description">
+                <h3>Descrierea sarcinii:</h3>
+                <p>Sarcina Practică 1 a constat în elaborarea documentației și specificațiilor tehnice pentru realizarea e-portofoliului. Acest document a stabilit structura, cerințele și componentele esențiale ale portofoliului educațional.</p>
+                
+                <div class="requirements">
+                    <h3><i class="fas fa-clipboard-list"></i> Principalele cerințe documentate:</h3>
+                    <ul>
+                        <li>Structura e-portofoliului (15 pagini)</li>
+                        <li>Conținutul fiecărei pagini</li>
+                        <li>Cerințe de tehnoredactare</li>
+                        <li>Tehnologii recomandate pentru implementare</li>
+                        <li>Criterii de evaluare</li>
+                        <li>Termenele de realizare</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resurse și link-uri -->
+        <section class="sp-section">
+            <h2><i class="fas fa-link"></i> Resurse și documente</h2>
+            
+            <div class="sp-links">
+                <div class="link-grid">
+                    <a href="https://github.com/neculitinichita-it/E-Portofoliu/tree/main/Sarcina%20Practica%20TI.1" class="link-item" target="_blank">
+                        <div class="link-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="link-text">
+                            <h3>Repository GitHub</h3>
+                            <p>Accesează fișierul PDF al sarcinii practice</p>
+                        </div>
+                    </a>
+                    
+                    <a href="../index.html" class="link-item">
+                        <div class="link-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <div class="link-text">
+                            <h3>E-Portofoliu Implementat</h3>
+                            <p>Vezi implementarea finală a portofoliului</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Sarcina practică TI.1..pdf" class="link-item" download>
+                        <div class="link-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="link-text">
+                            <h3>Descarcă PDF-ul</h3>
+                            <p>Descarcă documentația completă a proiectului</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pdf-preview">
+                <div class="pdf-info">
+                    <i class="fas fa-file-pdf pdf-icon"></i>
+                    <div>
+                        <h3>Documentația Sarcinii Practice 1</h3>
+                        <p><strong>Fișier:</strong> Sarcina practică TI.1..pdf</p>
+                        <p><strong>Data încărcării:</strong> 24 Septembrie 2024</p>
+                    </div>
+                </div>
+                <p>Acest document conține specificațiile complete pentru realizarea e-portofoliului, inclusiv toate cerințele de structură și tehnoredactare.</p>
+            </div>
+        </section>
+
+        <!-- Conținut documentație -->
+        <section class="sp-section">
+            <h2><i class="fas fa-clipboard-check"></i> Conținutul documentației</h2>
+            
+            <div class="sp-description">
+                <p>Documentația elaborată cuprinde următoarele secțiuni principale:</p>
+                
+                <h4>1. Structura e-portofoliului</h4>
+                <ul>
+                    <li>Numărul de pagini și denumirea acestora</li>
+                    <li>Conținutul specific pentru fiecare pagină</li>
+                    <li>Organizarea sarcinilor practice (SP1-SP10)</li>
+                </ul>
+                
+                <h4>2. Cerințe tehnice</h4>
+                <ul>
+                    <li>Tehnologii recomandate (HTML, CSS, JavaScript)</li>
+                    <li>Cerințe de responsive design</li>
+                    <li>Integrarea resurselor externe (Google Forms, Google Docs)</li>
+                </ul>
+                
+                <h4>3. Criterii de evaluare</h4>
+                <ul>
+                    <li>Respectarea structurii cerute</li>
+                    <li>Calitatea implementării tehnice</li>
+                    <li>Designul și experiența utilizatorului</li>
+                    <li>Conținutul prezentat</li>
+                </ul>
+                
+                <h4>4. Plan de implementare</h4>
+                <ul>
+                    <li>Etapele de dezvoltare</li>
+                    <li>Resursele necesare</li>
+                    <li>Termenele limită</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Concluzie -->
+        <section class="sp-section">
+            <h2><i class="fas fa-check-circle"></i> Concluzie și implementare</h2>
+            
+            <div class="sp-description">
+                <p>Documentația elaborată în cadrul Sarcinii Practice 1 a servit ca fundație pentru implementarea completă a e-portofoliului. Pe baza acestor specificații, am realizat:</p>
+                
+                <ul>
+                    <li><strong>Structura completă a site-ului</strong> cu cele 15 pagini cerute</li>
+                    <li><strong>Design responsive</strong> care funcționează pe toate dispozitivele</li>
+                    <li><strong>Integrarea tuturor componentelor</strong> (CV, galerie, orar, sarcini practice, contacte)</li>
+                    <li><strong>Implementarea tehnică</strong> folosind HTML5, CSS3 și JavaScript</li>
+                    <li><strong>Publicarea pe GitHub Pages</strong> pentru accesibilitate maximă</li>
+                </ul>
+                
+                <p>Documentația PDF rămâne ca referință permanentă a cerințelor inițiale și a planului de implementare a proiectului.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>E-Portofoliu Educațional</h3>
+                    <p>Neculiti Nichita | Grupa IT2501</p>
+                    <p>Facultatea de Informatică, USM</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../contacte.html"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="https://github.com/neculitinichita-it" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 E-Portofoliu Tehnologii de Comunicare Informațională. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
